@@ -51,6 +51,10 @@
     
 }
 
+.gameover {
+    width: 300px;
+}
+
 @keyframes pipe-animation {
     from{
         right: -80px;

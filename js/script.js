@@ -2,6 +2,7 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const clouds = document.querySelector('.clouds');
 const score = document.querySelector('.score');
+const gameover = document.querySelector('.gameover');
 let pont = document.querySelector('#res')
 let count = 0;
 
@@ -34,6 +35,7 @@ const loop = setInterval(() => {
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
 
+        gameover.src = '/images/over-game.png';
         pont.innerHTML = `Sua pontuação foi: ${count + 1}`
         
         clearInterval(loop);
