@@ -34,12 +34,11 @@ const loop = setInterval(() => {
         mario.src = './images/game-over.png';
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
-
-        gameover.src = '/images/over-game.png';
+        
         pont.innerHTML = `Sua pontuação foi: ${count + 1}`
         
-        clearInterval(loop);
 
+        clearInterval(loop);
     }
     count++;
     score.innerHTML = `SCORE: ${count}`;
